@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #1f2937; /* dark gray */
+    background: url('https://www.ober-surfaces.com/cache/images/product/34173cb38f07f89ddbebc2ac9128303f-1244-oberflex_purepapercolor_skin_darkblue020_detail.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  /* Navbar */
+  .header {
+    position: sticky;
+    top: 0;
+    background: white;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    z-index: 50;
+  }
+  
+  .nav {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ea580c; /* orange */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 0.875rem;
+  }
+  
+  .nav-links a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .nav-links a:hover {
+    color: #2563eb; /* blue */
+  }
+  
+  /* Main container */
+  .container {
+    max-width: 768px;
+    margin: 2rem auto;
+    background: white;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  /* Profile header */
+  .profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2563eb; /* blue-600 */
+    color: white;
+    padding: 1.5rem;
+  }
+  
+  @media(min-width: 768px) {
+    .profile-header {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+  
+  .profile-image {
+    width: 112px; /* 28 * 4px */
+    height: 112px;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    margin-bottom: 1rem;
+    object-fit: cover;
+  }
+  
+  @media(min-width: 768px) {
+    .profile-image {
+      margin-bottom: 0;
+      margin-right: 1.5rem;
+    }
+  }
+  
+  .profile-info h1 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .subtitle {
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
+  .contact-info {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+  }
+  
+  /* Sections */
+  .section {
+    padding: 1.5rem 2rem;
+  }
+  
+  .section h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-bottom: 2px solid #d1d5db; /* gray-300 */
+    padding-bottom: 0.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Skills */
+  .skills {
+    background-color: #f9fafb; /* gray-50 */
+  }
+  
+  .skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+  
+  .skills-list span {
+    background-color: #bfdbfe; /* blue-100 */
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+  }
+  
+  /* Experience */
+  .experience-item h3 {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .date {
+    font-size: 0.875rem;
+    color: #6b7280; /* gray-600 */
+    margin-bottom: 0.5rem;
+  }
+  
+  .experience-item ul {
+    margin: 0;
+    padding-left: 1.25rem;
+    font-size: 0.875rem;
+  }
+  
+  /* Education */
+  .education p {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  
+  /* Portfolio */
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  @media(min-width: 768px) {
+    .portfolio-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .portfolio-item {
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: box-shadow 0.3s;
+  }
+  
+  .portfolio-item:hover {
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  }
+  
+  .portfolio-item h3 {
+    font-weight: 700;
+    margin-bottom: 0.5
+  }
